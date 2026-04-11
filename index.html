@@ -171,10 +171,17 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: var(--white);
-      font-weight: 700;
-      font-size: 1.1rem;
       box-shadow: 0 8px 20px rgba(15, 23, 42, 0.25);
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+
+    .logo-mark img {
+      width: 70%;
+      height: 70%;
+      object-fit: contain;
+      filter: brightness(0) invert(1);
+      display: block;
     }
 
     .logo-text-main {
@@ -943,7 +950,9 @@
   <header class="header">
     <div class="container header-inner">
       <a href="#top" class="logo">
-        <div class="logo-mark">P</div>
+        <div class="logo-mark">
+          <img src="logo.png" alt="Peak Property Management Logo">
+        </div>
         <div>
           <!-- Change the company name here if you like -->
           <div class="logo-text-main">Peak Property Management</div>
@@ -952,27 +961,27 @@
       </a>
 
       <nav class="nav">
- <a href="#services" style="display:block; text-align:center;">
-  Owner Difficulties
-</a>
-  <a href="#maintenance" style="display:block; text-align:center;">
- Our Solution
-</a>
-<a href="#process" style="display:block; text-align:center;">
-  How We Work
-</a>
-<a href="#pricing" style="display:block; text-align:center;">
-Our Pricing
-</a>
-       <a href="#owners" style="display:block; text-align:center;">
-  Our Clients
-</a>
+        <a href="#services" style="display:block; text-align:center;">
+          Owner Difficulties
+        </a>
+        <a href="#maintenance" style="display:block; text-align:center;">
+          Our Solution
+        </a>
+        <a href="#process" style="display:block; text-align:center;">
+          How We Work
+        </a>
+        <a href="#pricing" style="display:block; text-align:center;">
+          Our Pricing
+        </a>
+        <a href="#owners" style="display:block; text-align:center;">
+          Our Clients
+        </a>
         <a href="#tenants" style="display:block; text-align:center;">
-  Tenant Considerations
-</a>
-       <a href="#contacts" style="display:block; text-align:center;">
- Contacts
-</a>
+          Tenant Considerations
+        </a>
+        <a href="#contacts" style="display:block; text-align:center;">
+          Contacts
+        </a>
       </nav>
 
       <div class="header-cta">
@@ -992,14 +1001,14 @@ Our Pricing
           <div class="hero-pill">
             <span class="hero-pill-badge">Property Management</span>
             <span class="hero-pill-text">With in-house maintenance from <a href="https://rentalfix.com" target="_blank" rel="noopener noreferrer">RentalFix</a></span>
-        </div>
+          </div>
 
           <h1 class="hero-title">
             Property management with an <span>in-house maintenance crew.</span>
           </h1>
 
           <p class="hero-subtitle">
-            We manage your rentals <strong>and</strong> and handle your repairs and upkeep through 
+            We manage your rentals <strong>and</strong> and handle your repairs and upkeep through
             <strong>RentalFix</strong> — so problems are solved faster, costs stay predictable, and your
             investment stays protected.
           </p>
@@ -1288,22 +1297,18 @@ Our Pricing
             </tbody>
           </table>
 
-          </p>
-          
-          Lease Fees = half one month rental.  Renewal Fees = $299 <br> <br>           
-                 
+          Lease Fees = half one month rental. Renewal Fees = $299 <br><br>
+
           <p class="pricing-footnote">
-          
             *Management fees are a flat rate per home. The monthly account fee covers statements,
             reporting, and portal access. Repair costs are billed separately, but our in-house maintenance model
-            is designed to reduce emergencies, vacancy days, and repeat trips.          
+            is designed to reduce emergencies, vacancy days, and repeat trips.
           </p>
 
           <a href="#contact" class="btn btn-primary btn-sm">Request a custom quote</a>
         </div>
       </div>
     </section>
-
 
     <!-- Tenants -->
     <section id="tenants">
@@ -1378,7 +1383,6 @@ Our Pricing
 </div>
 
 <script>
-  // Simple script to keep the year current
   document.getElementById('year').textContent = new Date().getFullYear();
 </script>
 </body>
